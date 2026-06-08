@@ -71,12 +71,108 @@ Current workflow:
 * Git-based development workflow
 
 ---
+## How to Run This Project
+
+This section explains how to reproduce the infrastructure locally using Terraform.
+
+---
+
+### 1. Prerequisites
+
+Make sure you have installed:
+
+* AWS CLI configured (`aws configure`)
+* Terraform installed
+* Git installed
+* An AWS account with permissions to create EC2 resources
+
+---
+
+### 2. Clone the Repository
+
+```bash id="x1p9kq"
+git clone https://github.com/rcarra-arq/terraform-aws-ec2-lab.git
+cd terraform-aws-ec2-lab/terraform
+```
+
+---
+
+### 3. Initialize Terraform
+
+```bash id="q7v2lm"
+terraform init
+```
+
+This downloads the required providers (AWS).
+
+---
+
+### 4. Review the Execution Plan
+
+```bash id="m4k9tz"
+terraform plan
+```
+
+This shows what resources will be created in AWS.
+
+---
+
+### 5. Deploy Infrastructure
+
+```bash id="c8v1nx"
+terraform apply
+```
+
+Type `yes` when prompted to confirm deployment.
+
+---
+
+### 6. Access the EC2 Instance
+
+After deployment, Terraform will output the public IP.
+
+Use it to connect:
+
+```bash id="p3t8qj"
+ssh -i your-key.pem ubuntu@<PUBLIC_IP>
+```
+
+Or access the web server (if Docker/Nginx is running):
+
+```
+http://<PUBLIC_IP>:80
+```
+
+---
+
+### 7. Destroy Resources (Important for cost control)
+
+```bash id="r6n2vk"
+terraform destroy
+```
+
+Type `yes` to remove all created resources.
+
+---
+
+## Notes
+
+* Always run `terraform destroy` to avoid unnecessary AWS costs.
+* Ensure your `.pem` key has correct permissions:
+
+```bash id="t9x4lm"
+chmod 400 your-key.pem
+```
+
+* AWS credentials must be configured locally before running Terraform.
+
 
 ## Author
 
 Renata C.
 Cloud Computing career transition focused on AWS, Infrastructure, and DevOps practices.
 
+---
 ---
 
 PT/BR
@@ -163,6 +259,100 @@ Fluxo atual:
 * Evoluir para arquitetura multi-serviço
 
 ---
+## Como Executar Este Projeto
+
+Esta seção explica como reproduzir a infraestrutura localmente utilizando Terraform.
+
+---
+
+### 1. Pré-requisitos
+
+Certifique-se de ter instalado:
+
+* AWS CLI configurado (`aws configure`)
+* Terraform instalado
+* Git instalado
+* Uma conta AWS com permissões para criar recursos EC2
+
+---
+
+### 2. Clonar o Repositório
+
+```bash id="p1k8lm"
+git clone https://github.com/rcarra-arq/terraform-aws-ec2-lab.git
+cd terraform-aws-ec2-lab/terraform
+```
+
+---
+
+### 3. Inicializar o Terraform
+
+```bash id="v6n2qk"
+terraform init
+```
+
+Este comando baixa os providers necessários (AWS).
+
+---
+
+### 4. Verificar o Plano de Execução
+
+```bash id="m9x4tz"
+terraform plan
+```
+
+Mostra quais recursos serão criados na AWS.
+
+---
+
+### 5. Criar a Infraestrutura
+
+```bash id="c7p2nx"
+terraform apply
+```
+
+Digite `yes` para confirmar a criação dos recursos.
+
+---
+
+### 6. Acessar a Instância EC2
+
+Após a criação, o Terraform irá exibir o IP público da instância.
+
+Acesse via SSH:
+
+```bash id="r3k9qj"
+ssh -i sua-chave.pem ubuntu@<IP_PÚBLICO>
+```
+
+Ou acesse o servidor web (caso Docker/Nginx esteja rodando):
+
+```
+http://<IP_PÚBLICO>:80
+```
+
+---
+
+### 7. Remover a Infraestrutura (controle de custos)
+
+```bash id="t8v1lm"
+terraform destroy
+```
+
+Digite `yes` para remover todos os recursos criados.
+
+---
+
+## Observações
+
+* Sempre execute `terraform destroy` para evitar custos desnecessários na AWS.
+* Garanta permissões corretas da chave SSH:
+
+```bash id="x4m7tz"
+chmod 400 sua-chave.pem
+```
+
+* As credenciais da AWS devem estar configuradas localmente antes da execução do Terraform.
 
 ## Autor
 
