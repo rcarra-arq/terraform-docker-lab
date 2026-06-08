@@ -2,14 +2,18 @@
 
 ## Overview
 
-This project is part of my Cloud Computing learning journey and focuses on Infrastructure as Code (IaC) and CI/CD fundamentals.
+This project is part of my career transition into Cloud Computing, focusing on Infrastructure as Code (IaC) and CI/CD fundamentals.
 
-The goal is to build and expand a cloud infrastructure project using AWS, Terraform, Git, GitHub, and GitHub Actions, while gaining hands-on experience with tools commonly used in Cloud and DevOps environments.
+The goal is to design and deploy cloud infrastructure using AWS and Terraform, while gaining hands-on experience with Git, GitHub, and GitHub Actions in a real DevOps workflow.
+
+In this project, I provision an AWS EC2 instance using Terraform and deploy a Dockerized Nginx web server accessible via a public IP.
+
 
 ## Technologies
 
-* AWS
+* AWS (EC2, Security Groups, VPC networking)
 * Terraform
+* Docker
 * Git
 * GitHub
 * GitHub Actions
@@ -17,20 +21,28 @@ The goal is to build and expand a cloud infrastructure project using AWS, Terraf
 
 ## Current Features
 
-* Provision AWS infrastructure using Terraform
-* Store infrastructure code in GitHub
-* Version control with Git
-* Automated workflow validation using GitHub Actions
+* Infrastructure provisioning with Terraform (AWS EC2)
+* Docker installation and container deployment
+* Public web server (Nginx on port 80)
+* Version control with Git and GitHub
+* CI validation using GitHub Actions
 
 ## Project Structure
 
 ```text
 terraform-docker-lab/
 ├── terraform/
-│   └── main.tf
-└── .github/
-    └── workflows/
-        └── terraform-check.yml
+│   ├── main.tf
+│   ├── variables.tf
+│   ├── outputs.tf
+│   └── README.md   (optional but nice)
+│
+├── .github/
+│   └── workflows/
+│       └── terraform-check.yml
+│
+├── README.md      
+└── .gitignore
 ```
 
 ## GitHub Actions
@@ -70,12 +82,13 @@ PT/BR
 
 Este projeto faz parte da minha jornada de transição de carreira para Cloud Computing e tem como foco os fundamentos de Infraestrutura como Código (IaC) e CI/CD.
 
-O objetivo é construir e evoluir um projeto de infraestrutura em nuvem utilizando AWS, Terraform, Git, GitHub e GitHub Actions, adquirindo experiência prática com ferramentas amplamente utilizadas em ambientes Cloud e DevOps.
+O objetivo é projetar e implementar um projeto de infraestrutura em nuvem utilizando AWS, Terraform, Git, GitHub e GitHub Actions, adquirindo experiência prática com ferramentas amplamente utilizadas em ambientes Cloud e DevOps.
 
 ## Tecnologias
 
-* AWS
+* AWS (EC2, Security Groups, VPC networking)
 * Terraform
+* Docker
 * Git
 * GitHub
 * GitHub Actions
@@ -93,10 +106,17 @@ O objetivo é construir e evoluir um projeto de infraestrutura em nuvem utilizan
 ```text
 terraform-docker-lab/
 ├── terraform/
-│   └── main.tf
-└── .github/
-    └── workflows/
-        └── terraform-check.yml
+│   ├── main.tf
+│   ├── variables.tf
+│   ├── outputs.tf
+│   └── README.md   (optional but nice)
+│
+├── .github/
+│   └── workflows/
+│       └── terraform-check.yml
+│
+├── README.md      
+└── .gitignore
 ```
 
 ## GitHub Actions
@@ -126,5 +146,5 @@ Fluxo atual:
 
 ## Sobre Mim
 
-Renata C. - sou uma profissional em transição de carreira para Cloud Computing, com foco em AWS, Infraestrutura e Operações Cloud. Este projeto faz parte da minha trajetória de aprendizado prático e construção de portfólio na área de tecnologia.
+Renata C. - Profissional em transição de carreira para Cloud Computing, com foco em AWS, Infraestrutura e práticas de DevOps. Este projeto faz parte da minha jornada prática de aprendizado e construção de portfólio na área de tecnologia.
 
