@@ -63,6 +63,9 @@ terraform-docker-lab/
 ### Nginx Page
 ![Nginx Page](screenshots/nginx-page.png)
 
+### GitHub Actions (CI Pipeline)
+![Actions](screenshots/actions.png)
+
 ---
 
 ## CI/CD (GitHub Actions)
@@ -253,6 +256,10 @@ terraform-docker-lab/
 
 ### Nginx Page
 ![Nginx Page](screenshots/nginx-page.png)
+
+### GitHub Actions (CI Pipeline)
+![Actions](screenshots/actions.png)
+
 ---
 
 ## CI/CD (GitHub Actions)
