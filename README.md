@@ -1,34 +1,35 @@
-# Terraform Docker Lab – AWS Infrastructure Project
+# Terraform Docker Lab — AWS Infrastructure
 
 ## Overview
 
-This project is part of my transition into Cloud Computing, focusing on Infrastructure as Code (IaC), automation, and CI/CD fundamentals.
+Provisioned an AWS EC2 instance using Terraform (IaC) and deployed a Dockerized Nginx web server accessible via public IP. Includes CI validation with GitHub Actions.
+Part of my Cloud Computing and DevOps learning journey, focusing on Infrastructure as Code, containerization, and automation.
 
-The goal is to design and deploy cloud infrastructure on AWS using Terraform, while developing practical experience with Git, GitHub, and modern DevOps workflows.
-
-In this project, I provision an AWS EC2 instance using Terraform and deploy a Dockerized Nginx web server accessible via a public IP address.
 
 ---
 
 ## Technologies
 
-* AWS (EC2, Security Groups, VPC networking)
+* AWS (EC2, Security Groups, VPC)
 * Terraform (Infrastructure as Code)
 * Docker (Containerization)
-* Git & GitHub (Version Control)
 * GitHub Actions (CI automation)
 * Linux (Ubuntu)
+* Git & GitHub
+---
+
+## Arquitecture
+
+Terraform → AWS Provider → Instância EC2 → Docker → Nginx (porta 80)
 
 ---
 
 ## Features
 
-* Infrastructure provisioning on AWS using Terraform
+* Infrastructure provisioned as code with Terraform
 * Automated EC2 deployment
-* Docker container running Nginx web server
-* Public access via EC2 IP (port 80)
-* Version control with Git and GitHub
-* CI validation using GitHub Actions
+* Dockerized Nginx web server with public access via port 80
+* CI validation on push with GitHub Actions
 
 ---
 
@@ -189,37 +190,37 @@ Cloud Computing career transition focused on AWS, Infrastructure, and DevOps pra
 ---
 
 PT/BR
-# Terraform Docker Lab – Projeto de Infraestrutura na AWS
+# Terraform Docker Lab — Infraestrutura AWS
 
 ## Visão Geral
 
-Este projeto faz parte da minha transição de carreira para Cloud Computing, com foco em Infraestrutura como Código (IaC), automação e fundamentos de CI/CD.
+Provisionamento de uma instância EC2 na AWS utilizando Terraform (IaC) e deploy de um servidor web Nginx conteinerizado com Docker, acessível via IP público. Inclui validação de CI com GitHub Actions.
+Parte da minha jornada de aprendizado em Cloud Computing e DevOps, com foco em Infraestrutura como Código, conteinerização e automação.
 
-O objetivo é projetar e provisionar infraestrutura em nuvem na AWS utilizando Terraform, enquanto desenvolvo experiência prática com Git, GitHub e fluxos modernos de DevOps.
-
-Neste projeto, eu provisiono uma instância EC2 na AWS com Terraform e realizo o deploy de um servidor Nginx em container Docker, acessível via IP público.
 
 ---
 
 ## Tecnologias
 
-* AWS (EC2, Security Groups, rede VPC)
+* AWS (EC2, Security Groups, VPC)
 * Terraform (Infraestrutura como Código)
-* Docker (Containerização)
-* Git & GitHub (Controle de versão)
-* GitHub Actions (Automação de CI)
+* Docker (Conteinerização)
+* GitHub Actions (automação de CI)
 * Linux (Ubuntu)
+* Git & GitHub
 
 ---
+## Arquitetura
 
+Terraform → AWS Provider → Instância EC2 → Docker → Nginx (porta 80)
+
+---
 ## Funcionalidades
 
-* Provisionamento de infraestrutura na AWS com Terraform
+* Infraestrutura provisionada como código com Terraform
 * Deploy automatizado de instância EC2
-* Execução de container Docker com Nginx
-* Acesso público via IP da instância (porta 80)
-* Versionamento com Git e GitHub
-* Validação de configuração via GitHub Actions
+* Servidor web Nginx conteinerizado com acesso público via porta 80
+* Validação de CI a cada push com GitHub Actions
 
 ---
 
