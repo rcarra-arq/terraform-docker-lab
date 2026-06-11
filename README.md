@@ -48,6 +48,19 @@ terraform-docker-lab/
 ├── README.md
 └── .gitignore
 ```
+## Screenshots
+
+### Terraform Apply
+![Terraform Apply](screenshots/terraform-apply.png)
+
+### EC2 Running
+![EC2 Running](screenshots/ec2-running.png)
+
+### Nginx Validation
+![Nginx Validation](screenshots/nginx-validation.png)
+
+### Nginx Page
+![Nginx Page](screenshots/nginx-page.png)
 
 ---
 
@@ -226,7 +239,19 @@ terraform-docker-lab/
 ├── README.md
 └── .gitignore
 ```
+## Screenshots
 
+### Terraform Apply
+![Terraform Apply](screenshots/terraform-apply.png)
+
+### EC2 Running
+![EC2 Running](screenshots/ec2-running.png)
+
+### Nginx Validation
+![Nginx Validation](screenshots/nginx-validation.png)
+
+### Nginx Page
+![Nginx Page](screenshots/nginx-page.png)
 ---
 
 ## CI/CD (GitHub Actions)
