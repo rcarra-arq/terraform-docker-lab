@@ -1,4 +1,7 @@
-# Terraform Docker Lab — AWS Infrastructure
+
+![AWS](https://img.shields.io/badge/AWS-Cloud-orange)
+
+## Terraform Docker Lab — AWS Infrastructure
 
 ## Overview
 
