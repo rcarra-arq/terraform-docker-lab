@@ -13,12 +13,12 @@ Part of my Cloud Computing and DevOps learning journey, focusing on Infrastructu
 
 ## Technologies
 
-* AWS (EC2, Security Groups, VPC)
-* Terraform (Infrastructure as Code)
-* Docker (Containerization)
-* GitHub Actions (CI automation)
-* Linux (Ubuntu)
-* Git & GitHub
+* [x] AWS (EC2, Security Groups, VPC)
+* [x] Terraform (Infrastructure as Code)
+* [x] Docker (Containerization)
+* [x] GitHub Actions (CI automation)
+* [x] Linux (Ubuntu)
+* [x] Git & GitHub
 ---
 
 ## Arquitecture
