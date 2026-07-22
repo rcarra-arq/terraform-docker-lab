@@ -111,8 +111,8 @@ Make sure you have installed:
 ### 2. Clone the Repository
 
 ```bash id="x1p9kq"
-git clone https://github.com/rcarra-arq/terraform-aws-ec2-lab.git
-cd terraform-aws-ec2-lab/terraform
+git clone https://github.com/rcarra-arq/terraform-docker-lab.git
+cd terraform-docker-lab/terraform
 ```
 
 ---
@@ -185,10 +185,6 @@ chmod 400 your-key.pem
 ```
 
 * AWS credentials must be configured locally before running Terraform.
-
-## Challenges & Troubleshooting
-
-(I'll come back to this later)
 
 
 Renata C.
@@ -317,8 +313,8 @@ Certifique-se de ter instalado:
 ### 2. Clonar o Repositório
 
 ```bash id="p1k8lm"
-git clone https://github.com/rcarra-arq/terraform-aws-ec2-lab.git
-cd terraform-aws-ec2-lab/terraform
+git clone https://github.com/rcarra-arq/terraform-docker-lab.git
+cd terraform-docker-lab/terraform
 ```
 
 ---
