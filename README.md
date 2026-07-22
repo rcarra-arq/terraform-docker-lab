@@ -21,7 +21,7 @@ Part of my Cloud Computing and DevOps learning journey, focusing on Infrastructu
 * [x] Git & GitHub
 ---
 
-## Arquitecture
+## Architecture
 
 Terraform → AWS Provider → Instância EC2 → Docker → Nginx (porta 80)
 
@@ -186,6 +186,7 @@ chmod 400 your-key.pem
 
 * AWS credentials must be configured locally before running Terraform.
 
+## Author
 
 Renata C.
 Cloud Computing career transition focused on AWS, Infrastructure, and DevOps practices.
